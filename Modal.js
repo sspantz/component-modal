@@ -20,4 +20,10 @@ function Modal(
   return Div;
 }
 
+var root = document.getElementById("root");
+
+var modal = Modal();
+
+root.appendChild(modal);
+
 console.log("OK!");
