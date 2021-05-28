@@ -1,6 +1,6 @@
 const defaults = {
   title: "Modal Title",
-  message: "Real prgrammers count from 0.",
+  message: "Real programmers count from 0.",
 };
 function Modal({ title = defaults.title, message = defaults.message } = {}) {
   let Div = document.createElement("dialog");
