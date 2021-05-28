@@ -1,11 +1,8 @@
-function Modal(
-  config = {
-    title: "Modal Title",
-    message: "Real programmers count from 0.",
-  }
-) {
-  const { title, message } = config;
-
+const defaults = {
+  title: "Modal Title",
+  message: "Real prgrammers count from 0.",
+};
+function Modal({ title = defaults.title, message = defaults.message } = {}) {
   let Div = document.createElement("dialog");
   Div.style = `
     border-radius: 10px;
