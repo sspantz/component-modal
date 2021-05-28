@@ -4,5 +4,5 @@ var root = document.getElementById("root");
 var modal = Modal();
 root.appendChild(modal);
 
-var button = document.querySelector("button");
+var button = document.getElementById("clickme");
 button.addEventListener("click", () => modal.showModal());
