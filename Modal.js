@@ -20,13 +20,6 @@ function Modal(
   return Div;
 }
 
-var root = document.getElementById("root");
-
-var modal = Modal();
-
-root.appendChild(modal);
-
-var button = document.querySelector("button");
-button.addEventListener("click", () => alert("OK!"));
-
 console.log("OK!");
+
+export default Modal;
