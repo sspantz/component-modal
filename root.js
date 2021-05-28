@@ -9,4 +9,10 @@ var modal = Modal({
 root.appendChild(modal);
 
 var button = document.getElementById("clickme");
-button.addEventListener("click", () => modal.showModal());
+button.addEventListener("click", () => {
+  if (typeof modal.showModal === "function") {
+    modal.showModal();
+  } else {
+    alert(`Not supported by this browser!`);
+  }
+});
