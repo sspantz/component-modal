@@ -31,9 +31,7 @@ function Modal({ title = defaults.title, message = defaults.message } = {}) {
   `;
   CloseButton.addEventListener("click", () => Div.close());
 
-  Div.appendChild(Title);
-  Div.appendChild(Message);
-  Div.appendChild(CloseButton);
+  Div.append(Title, Message, CloseButton);
 
   return Div;
 }
